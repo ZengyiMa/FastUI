@@ -1,10 +1,13 @@
 <template>
-    <p @if={{ifvalue}}>现在·</p>
-    <h1>{{ msg }}</h1>
+    <view>
+        <text>hello fastui</text>
+    </view>
 </template>
 
 <data>
 {
-    "msg":1
+"msg":"string"
+
 }
+    
 </data>
