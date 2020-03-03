@@ -6,8 +6,6 @@
 
 <data>
 {
-"msg":"string"
-
+"msg:string":"string"
 }
-    
 </data>
