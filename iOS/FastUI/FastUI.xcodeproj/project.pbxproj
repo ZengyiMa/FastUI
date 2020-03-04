@@ -30,29 +30,30 @@
 		6D6E847B240EA734006EA92E /* YGConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E846C240EA734006EA92E /* YGConfig.cpp */; };
 		6D6E847C240EA734006EA92E /* YGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E846D240EA734006EA92E /* YGNode.cpp */; };
 		6D6E847D240EA734006EA92E /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8471240EA734006EA92E /* event.cpp */; };
-		6D6E849D240EA856006EA92E /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8480240EA855006EA92E /* Transport.swift */; };
-		6D6E849E240EA856006EA92E /* FoundationTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8481240EA855006EA92E /* FoundationTransport.swift */; };
-		6D6E849F240EA856006EA92E /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8482240EA855006EA92E /* TCPTransport.swift */; };
-		6D6E84A0240EA856006EA92E /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8484240EA855006EA92E /* Security.swift */; };
-		6D6E84A1240EA856006EA92E /* FoundationSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8485240EA855006EA92E /* FoundationSecurity.swift */; };
-		6D6E84A2240EA856006EA92E /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8487240EA855006EA92E /* Data+Extensions.swift */; };
-		6D6E84A3240EA856006EA92E /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8489240EA855006EA92E /* Server.swift */; };
-		6D6E84A4240EA856006EA92E /* WebSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E848A240EA855006EA92E /* WebSocketServer.swift */; };
-		6D6E84A5240EA856006EA92E /* FoundationHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E848D240EA855006EA92E /* FoundationHTTPHandler.swift */; };
-		6D6E84A6240EA856006EA92E /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E848E240EA855006EA92E /* HTTPHandler.swift */; };
-		6D6E84A7240EA856006EA92E /* FrameCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E848F240EA855006EA92E /* FrameCollector.swift */; };
-		6D6E84A8240EA856006EA92E /* StringHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8490240EA855006EA92E /* StringHTTPHandler.swift */; };
-		6D6E84A9240EA856006EA92E /* FoundationHTTPServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8491240EA855006EA92E /* FoundationHTTPServerHandler.swift */; };
-		6D6E84AA240EA856006EA92E /* Framer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8492240EA855006EA92E /* Framer.swift */; };
-		6D6E84AB240EA856006EA92E /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8494240EA855006EA92E /* Compression.swift */; };
-		6D6E84AC240EA856006EA92E /* WSCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8495240EA855006EA92E /* WSCompression.swift */; };
-		6D6E84AD240EA856006EA92E /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8497240EA855006EA92E /* WebSocket.swift */; };
-		6D6E84AE240EA856006EA92E /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8499240EA855006EA92E /* Engine.swift */; };
-		6D6E84AF240EA856006EA92E /* NativeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E849A240EA855006EA92E /* NativeEngine.swift */; };
-		6D6E84B0240EA856006EA92E /* WSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E849B240EA855006EA92E /* WSEngine.swift */; };
 		6D6E84BA240EAB88006EA92E /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E84B7240EAB88006EA92E /* NSObject+YYModel.m */; };
 		6D6E84BB240EAB88006EA92E /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E84B8240EAB88006EA92E /* YYClassInfo.m */; };
-		6D6E84BD240EABD7006EA92E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E84BC240EABD7006EA92E /* Test.swift */; };
+		6D6E852C240FFAEB006EA92E /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E84FA240FFAEB006EA92E /* SRWebSocket.m */; };
+		6D6E852D240FFAEB006EA92E /* NSRunLoop+SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E84FB240FFAEB006EA92E /* NSRunLoop+SRWebSocket.m */; };
+		6D6E852F240FFAEB006EA92E /* SRSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E84FE240FFAEB006EA92E /* SRSecurityPolicy.m */; };
+		6D6E8530240FFAEB006EA92E /* SRProxyConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8503240FFAEB006EA92E /* SRProxyConnect.m */; };
+		6D6E8531240FFAEB006EA92E /* SRRunLoopThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8507240FFAEB006EA92E /* SRRunLoopThread.m */; };
+		6D6E8532240FFAEB006EA92E /* SRPinningSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E850A240FFAEB006EA92E /* SRPinningSecurityPolicy.m */; };
+		6D6E8533240FFAEB006EA92E /* SRDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E850D240FFAEB006EA92E /* SRDelegateController.m */; };
+		6D6E8534240FFAEB006EA92E /* SRMutex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8513240FFAEB006EA92E /* SRMutex.m */; };
+		6D6E8535240FFAEB006EA92E /* SRHTTPConnectMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8514240FFAEB006EA92E /* SRHTTPConnectMessage.m */; };
+		6D6E8536240FFAEB006EA92E /* SRURLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8517240FFAEB006EA92E /* SRURLUtilities.m */; };
+		6D6E8537240FFAEB006EA92E /* SRLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8519240FFAEB006EA92E /* SRLog.m */; };
+		6D6E8538240FFAEB006EA92E /* SRHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E851A240FFAEB006EA92E /* SRHash.m */; };
+		6D6E8539240FFAEB006EA92E /* SRError.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E851D240FFAEB006EA92E /* SRError.m */; };
+		6D6E853A240FFAEB006EA92E /* SRRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E851E240FFAEB006EA92E /* SRRandom.m */; };
+		6D6E853B240FFAEB006EA92E /* SRSIMDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8520240FFAEB006EA92E /* SRSIMDHelpers.m */; };
+		6D6E853C240FFAEB006EA92E /* SRIOConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8523240FFAEB006EA92E /* SRIOConsumer.m */; };
+		6D6E853D240FFAEB006EA92E /* SRIOConsumerPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8525240FFAEB006EA92E /* SRIOConsumerPool.m */; };
+		6D6E853E240FFAEB006EA92E /* SRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E8526240FFAEB006EA92E /* SRConstants.m */; };
+		6D6E853F240FFAEB006EA92E /* NSURLRequest+SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E852B240FFAEB006EA92E /* NSURLRequest+SRWebSocket.m */; };
+		6D6E854324100226006EA92E /* FastUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E854224100226006EA92E /* FastUIModel.m */; };
+		6D6E85462410025C006EA92E /* FastUIUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E85452410025C006EA92E /* FastUIUIModel.m */; };
+		6D6E85492410026E006EA92E /* FastUIDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E85482410026E006EA92E /* FastUIDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,34 +127,59 @@
 		6D6E846E240EA734006EA92E /* YGValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGValue.h; sourceTree = "<group>"; };
 		6D6E8470240EA734006EA92E /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = event.h; sourceTree = "<group>"; };
 		6D6E8471240EA734006EA92E /* event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = event.cpp; sourceTree = "<group>"; };
-		6D6E8480240EA855006EA92E /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
-		6D6E8481240EA855006EA92E /* FoundationTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationTransport.swift; sourceTree = "<group>"; };
-		6D6E8482240EA855006EA92E /* TCPTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPTransport.swift; sourceTree = "<group>"; };
-		6D6E8484240EA855006EA92E /* Security.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
-		6D6E8485240EA855006EA92E /* FoundationSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationSecurity.swift; sourceTree = "<group>"; };
-		6D6E8487240EA855006EA92E /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
-		6D6E8489240EA855006EA92E /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
-		6D6E848A240EA855006EA92E /* WebSocketServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketServer.swift; sourceTree = "<group>"; };
-		6D6E848B240EA855006EA92E /* Starscream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Starscream.h; sourceTree = "<group>"; };
-		6D6E848D240EA855006EA92E /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationHTTPHandler.swift; sourceTree = "<group>"; };
-		6D6E848E240EA855006EA92E /* HTTPHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHandler.swift; sourceTree = "<group>"; };
-		6D6E848F240EA855006EA92E /* FrameCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameCollector.swift; sourceTree = "<group>"; };
-		6D6E8490240EA855006EA92E /* StringHTTPHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHTTPHandler.swift; sourceTree = "<group>"; };
-		6D6E8491240EA855006EA92E /* FoundationHTTPServerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationHTTPServerHandler.swift; sourceTree = "<group>"; };
-		6D6E8492240EA855006EA92E /* Framer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Framer.swift; sourceTree = "<group>"; };
-		6D6E8494240EA855006EA92E /* Compression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compression.swift; sourceTree = "<group>"; };
-		6D6E8495240EA855006EA92E /* WSCompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSCompression.swift; sourceTree = "<group>"; };
-		6D6E8497240EA855006EA92E /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
-		6D6E8499240EA855006EA92E /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
-		6D6E849A240EA855006EA92E /* NativeEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeEngine.swift; sourceTree = "<group>"; };
-		6D6E849B240EA855006EA92E /* WSEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSEngine.swift; sourceTree = "<group>"; };
-		6D6E849C240EA855006EA92E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D6E84B5240EAB88006EA92E /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
 		6D6E84B6240EAB88006EA92E /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		6D6E84B7240EAB88006EA92E /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
 		6D6E84B8240EAB88006EA92E /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		6D6E84B9240EAB88006EA92E /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
-		6D6E84BC240EABD7006EA92E /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		6D6E84BE240FF771006EA92E /* FastUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FastUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		6D6E84FA240FFAEB006EA92E /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		6D6E84FB240FFAEB006EA92E /* NSRunLoop+SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRunLoop+SRWebSocket.m"; sourceTree = "<group>"; };
+		6D6E84FE240FFAEB006EA92E /* SRSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSecurityPolicy.m; sourceTree = "<group>"; };
+		6D6E84FF240FFAEB006EA92E /* SocketRocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketRocket.h; sourceTree = "<group>"; };
+		6D6E8501240FFAEB006EA92E /* SRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRConstants.h; sourceTree = "<group>"; };
+		6D6E8503240FFAEB006EA92E /* SRProxyConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRProxyConnect.m; sourceTree = "<group>"; };
+		6D6E8504240FFAEB006EA92E /* SRProxyConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRProxyConnect.h; sourceTree = "<group>"; };
+		6D6E8506240FFAEB006EA92E /* SRRunLoopThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRunLoopThread.h; sourceTree = "<group>"; };
+		6D6E8507240FFAEB006EA92E /* SRRunLoopThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRunLoopThread.m; sourceTree = "<group>"; };
+		6D6E8509240FFAEB006EA92E /* SRPinningSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPinningSecurityPolicy.h; sourceTree = "<group>"; };
+		6D6E850A240FFAEB006EA92E /* SRPinningSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPinningSecurityPolicy.m; sourceTree = "<group>"; };
+		6D6E850B240FFAEB006EA92E /* NSRunLoop+SRWebSocketPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRunLoop+SRWebSocketPrivate.h"; sourceTree = "<group>"; };
+		6D6E850D240FFAEB006EA92E /* SRDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDelegateController.m; sourceTree = "<group>"; };
+		6D6E850E240FFAEB006EA92E /* SRDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDelegateController.h; sourceTree = "<group>"; };
+		6D6E850F240FFAEB006EA92E /* NSURLRequest+SRWebSocketPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+SRWebSocketPrivate.h"; sourceTree = "<group>"; };
+		6D6E8511240FFAEB006EA92E /* SRHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRHash.h; sourceTree = "<group>"; };
+		6D6E8512240FFAEB006EA92E /* SRLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRLog.h; sourceTree = "<group>"; };
+		6D6E8513240FFAEB006EA92E /* SRMutex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRMutex.m; sourceTree = "<group>"; };
+		6D6E8514240FFAEB006EA92E /* SRHTTPConnectMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRHTTPConnectMessage.m; sourceTree = "<group>"; };
+		6D6E8515240FFAEB006EA92E /* SRSIMDHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSIMDHelpers.h; sourceTree = "<group>"; };
+		6D6E8516240FFAEB006EA92E /* SRRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRandom.h; sourceTree = "<group>"; };
+		6D6E8517240FFAEB006EA92E /* SRURLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRURLUtilities.m; sourceTree = "<group>"; };
+		6D6E8518240FFAEB006EA92E /* SRError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRError.h; sourceTree = "<group>"; };
+		6D6E8519240FFAEB006EA92E /* SRLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRLog.m; sourceTree = "<group>"; };
+		6D6E851A240FFAEB006EA92E /* SRHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRHash.m; sourceTree = "<group>"; };
+		6D6E851B240FFAEB006EA92E /* SRMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRMutex.h; sourceTree = "<group>"; };
+		6D6E851C240FFAEB006EA92E /* SRHTTPConnectMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRHTTPConnectMessage.h; sourceTree = "<group>"; };
+		6D6E851D240FFAEB006EA92E /* SRError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRError.m; sourceTree = "<group>"; };
+		6D6E851E240FFAEB006EA92E /* SRRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRandom.m; sourceTree = "<group>"; };
+		6D6E851F240FFAEB006EA92E /* SRURLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRURLUtilities.h; sourceTree = "<group>"; };
+		6D6E8520240FFAEB006EA92E /* SRSIMDHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSIMDHelpers.m; sourceTree = "<group>"; };
+		6D6E8522240FFAEB006EA92E /* SRIOConsumerPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRIOConsumerPool.h; sourceTree = "<group>"; };
+		6D6E8523240FFAEB006EA92E /* SRIOConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRIOConsumer.m; sourceTree = "<group>"; };
+		6D6E8524240FFAEB006EA92E /* SRIOConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRIOConsumer.h; sourceTree = "<group>"; };
+		6D6E8525240FFAEB006EA92E /* SRIOConsumerPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRIOConsumerPool.m; sourceTree = "<group>"; };
+		6D6E8526240FFAEB006EA92E /* SRConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRConstants.m; sourceTree = "<group>"; };
+		6D6E8527240FFAEB006EA92E /* NSURLRequest+SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+SRWebSocket.h"; sourceTree = "<group>"; };
+		6D6E8528240FFAEB006EA92E /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		6D6E8529240FFAEB006EA92E /* NSRunLoop+SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRunLoop+SRWebSocket.h"; sourceTree = "<group>"; };
+		6D6E852A240FFAEB006EA92E /* SRSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSecurityPolicy.h; sourceTree = "<group>"; };
+		6D6E852B240FFAEB006EA92E /* NSURLRequest+SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+SRWebSocket.m"; sourceTree = "<group>"; };
+		6D6E854124100226006EA92E /* FastUIModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastUIModel.h; sourceTree = "<group>"; };
+		6D6E854224100226006EA92E /* FastUIModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastUIModel.m; sourceTree = "<group>"; };
+		6D6E85442410025C006EA92E /* FastUIUIModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastUIUIModel.h; sourceTree = "<group>"; };
+		6D6E85452410025C006EA92E /* FastUIUIModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastUIUIModel.m; sourceTree = "<group>"; };
+		6D6E85472410026E006EA92E /* FastUIDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastUIDataModel.h; sourceTree = "<group>"; };
+		6D6E85482410026E006EA92E /* FastUIDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastUIDataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +242,7 @@
 				6D6E841E240EA522006EA92E /* LaunchScreen.storyboard */,
 				6D6E8421240EA522006EA92E /* Info.plist */,
 				6D6E8422240EA522006EA92E /* main.m */,
+				6D6E84BE240FF771006EA92E /* FastUI-Bridging-Header.h */,
 			);
 			path = FastUI;
 			sourceTree = "<group>";
@@ -241,10 +268,10 @@
 		6D6E8445240EA6EC006EA92E /* FastUI */ = {
 			isa = PBXGroup;
 			children = (
+				6D6E8540241001AB006EA92E /* FastUIModel */,
+				6D6E84F9240FFAEB006EA92E /* SocketRocket */,
 				6D6E84B4240EAB88006EA92E /* YYModel */,
-				6D6E847E240EA855006EA92E /* Starscream */,
 				6D6E8446240EA6F3006EA92E /* YogaKit */,
-				6D6E84BC240EABD7006EA92E /* Test.swift */,
 			);
 			path = FastUI;
 			sourceTree = "<group>";
@@ -315,99 +342,6 @@
 			path = event;
 			sourceTree = "<group>";
 		};
-		6D6E847E240EA855006EA92E /* Starscream */ = {
-			isa = PBXGroup;
-			children = (
-				6D6E847F240EA855006EA92E /* Transport */,
-				6D6E8483240EA855006EA92E /* Security */,
-				6D6E8486240EA855006EA92E /* DataBytes */,
-				6D6E8488240EA855006EA92E /* Server */,
-				6D6E848B240EA855006EA92E /* Starscream.h */,
-				6D6E848C240EA855006EA92E /* Framer */,
-				6D6E8493240EA855006EA92E /* Compression */,
-				6D6E8496240EA855006EA92E /* Starscream */,
-				6D6E8498240EA855006EA92E /* Engine */,
-				6D6E849C240EA855006EA92E /* Info.plist */,
-			);
-			path = Starscream;
-			sourceTree = "<group>";
-		};
-		6D6E847F240EA855006EA92E /* Transport */ = {
-			isa = PBXGroup;
-			children = (
-				6D6E8480240EA855006EA92E /* Transport.swift */,
-				6D6E8481240EA855006EA92E /* FoundationTransport.swift */,
-				6D6E8482240EA855006EA92E /* TCPTransport.swift */,
-			);
-			path = Transport;
-			sourceTree = "<group>";
-		};
-		6D6E8483240EA855006EA92E /* Security */ = {
-			isa = PBXGroup;
-			children = (
-				6D6E8484240EA855006EA92E /* Security.swift */,
-				6D6E8485240EA855006EA92E /* FoundationSecurity.swift */,
-			);
-			path = Security;
-			sourceTree = "<group>";
-		};
-		6D6E8486240EA855006EA92E /* DataBytes */ = {
-			isa = PBXGroup;
-			children = (
-				6D6E8487240EA855006EA92E /* Data+Extensions.swift */,
-			);
-			path = DataBytes;
-			sourceTree = "<group>";
-		};
-		6D6E8488240EA855006EA92E /* Server */ = {
-			isa = PBXGroup;
-			children = (
-				6D6E8489240EA855006EA92E /* Server.swift */,
-				6D6E848A240EA855006EA92E /* WebSocketServer.swift */,
-			);
-			path = Server;
-			sourceTree = "<group>";
-		};
-		6D6E848C240EA855006EA92E /* Framer */ = {
-			isa = PBXGroup;
-			children = (
-				6D6E848D240EA855006EA92E /* FoundationHTTPHandler.swift */,
-				6D6E848E240EA855006EA92E /* HTTPHandler.swift */,
-				6D6E848F240EA855006EA92E /* FrameCollector.swift */,
-				6D6E8490240EA855006EA92E /* StringHTTPHandler.swift */,
-				6D6E8491240EA855006EA92E /* FoundationHTTPServerHandler.swift */,
-				6D6E8492240EA855006EA92E /* Framer.swift */,
-			);
-			path = Framer;
-			sourceTree = "<group>";
-		};
-		6D6E8493240EA855006EA92E /* Compression */ = {
-			isa = PBXGroup;
-			children = (
-				6D6E8494240EA855006EA92E /* Compression.swift */,
-				6D6E8495240EA855006EA92E /* WSCompression.swift */,
-			);
-			path = Compression;
-			sourceTree = "<group>";
-		};
-		6D6E8496240EA855006EA92E /* Starscream */ = {
-			isa = PBXGroup;
-			children = (
-				6D6E8497240EA855006EA92E /* WebSocket.swift */,
-			);
-			path = Starscream;
-			sourceTree = "<group>";
-		};
-		6D6E8498240EA855006EA92E /* Engine */ = {
-			isa = PBXGroup;
-			children = (
-				6D6E8499240EA855006EA92E /* Engine.swift */,
-				6D6E849A240EA855006EA92E /* NativeEngine.swift */,
-				6D6E849B240EA855006EA92E /* WSEngine.swift */,
-			);
-			path = Engine;
-			sourceTree = "<group>";
-		};
 		6D6E84B4240EAB88006EA92E /* YYModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,6 +352,123 @@
 				6D6E84B9240EAB88006EA92E /* NSObject+YYModel.h */,
 			);
 			path = YYModel;
+			sourceTree = "<group>";
+		};
+		6D6E84F9240FFAEB006EA92E /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E84FA240FFAEB006EA92E /* SRWebSocket.m */,
+				6D6E84FB240FFAEB006EA92E /* NSRunLoop+SRWebSocket.m */,
+				6D6E84FE240FFAEB006EA92E /* SRSecurityPolicy.m */,
+				6D6E84FF240FFAEB006EA92E /* SocketRocket.h */,
+				6D6E8500240FFAEB006EA92E /* Internal */,
+				6D6E8527240FFAEB006EA92E /* NSURLRequest+SRWebSocket.h */,
+				6D6E8528240FFAEB006EA92E /* SRWebSocket.h */,
+				6D6E8529240FFAEB006EA92E /* NSRunLoop+SRWebSocket.h */,
+				6D6E852A240FFAEB006EA92E /* SRSecurityPolicy.h */,
+				6D6E852B240FFAEB006EA92E /* NSURLRequest+SRWebSocket.m */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		6D6E8500240FFAEB006EA92E /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E8501240FFAEB006EA92E /* SRConstants.h */,
+				6D6E8502240FFAEB006EA92E /* Proxy */,
+				6D6E8505240FFAEB006EA92E /* RunLoop */,
+				6D6E8508240FFAEB006EA92E /* Security */,
+				6D6E850B240FFAEB006EA92E /* NSRunLoop+SRWebSocketPrivate.h */,
+				6D6E850C240FFAEB006EA92E /* Delegate */,
+				6D6E850F240FFAEB006EA92E /* NSURLRequest+SRWebSocketPrivate.h */,
+				6D6E8510240FFAEB006EA92E /* Utilities */,
+				6D6E8521240FFAEB006EA92E /* IOConsumer */,
+				6D6E8526240FFAEB006EA92E /* SRConstants.m */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		6D6E8502240FFAEB006EA92E /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E8503240FFAEB006EA92E /* SRProxyConnect.m */,
+				6D6E8504240FFAEB006EA92E /* SRProxyConnect.h */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		6D6E8505240FFAEB006EA92E /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E8506240FFAEB006EA92E /* SRRunLoopThread.h */,
+				6D6E8507240FFAEB006EA92E /* SRRunLoopThread.m */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		6D6E8508240FFAEB006EA92E /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E8509240FFAEB006EA92E /* SRPinningSecurityPolicy.h */,
+				6D6E850A240FFAEB006EA92E /* SRPinningSecurityPolicy.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		6D6E850C240FFAEB006EA92E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E850D240FFAEB006EA92E /* SRDelegateController.m */,
+				6D6E850E240FFAEB006EA92E /* SRDelegateController.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		6D6E8510240FFAEB006EA92E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E8511240FFAEB006EA92E /* SRHash.h */,
+				6D6E8512240FFAEB006EA92E /* SRLog.h */,
+				6D6E8513240FFAEB006EA92E /* SRMutex.m */,
+				6D6E8514240FFAEB006EA92E /* SRHTTPConnectMessage.m */,
+				6D6E8515240FFAEB006EA92E /* SRSIMDHelpers.h */,
+				6D6E8516240FFAEB006EA92E /* SRRandom.h */,
+				6D6E8517240FFAEB006EA92E /* SRURLUtilities.m */,
+				6D6E8518240FFAEB006EA92E /* SRError.h */,
+				6D6E8519240FFAEB006EA92E /* SRLog.m */,
+				6D6E851A240FFAEB006EA92E /* SRHash.m */,
+				6D6E851B240FFAEB006EA92E /* SRMutex.h */,
+				6D6E851C240FFAEB006EA92E /* SRHTTPConnectMessage.h */,
+				6D6E851D240FFAEB006EA92E /* SRError.m */,
+				6D6E851E240FFAEB006EA92E /* SRRandom.m */,
+				6D6E851F240FFAEB006EA92E /* SRURLUtilities.h */,
+				6D6E8520240FFAEB006EA92E /* SRSIMDHelpers.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6D6E8521240FFAEB006EA92E /* IOConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E8522240FFAEB006EA92E /* SRIOConsumerPool.h */,
+				6D6E8523240FFAEB006EA92E /* SRIOConsumer.m */,
+				6D6E8524240FFAEB006EA92E /* SRIOConsumer.h */,
+				6D6E8525240FFAEB006EA92E /* SRIOConsumerPool.m */,
+			);
+			path = IOConsumer;
+			sourceTree = "<group>";
+		};
+		6D6E8540241001AB006EA92E /* FastUIModel */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E854124100226006EA92E /* FastUIModel.h */,
+				6D6E854224100226006EA92E /* FastUIModel.m */,
+				6D6E85442410025C006EA92E /* FastUIUIModel.h */,
+				6D6E85452410025C006EA92E /* FastUIUIModel.m */,
+				6D6E85472410026E006EA92E /* FastUIDataModel.h */,
+				6D6E85482410026E006EA92E /* FastUIDataModel.m */,
+			);
+			path = FastUIModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -551,47 +602,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6E8534240FFAEB006EA92E /* SRMutex.m in Sources */,
+				6D6E8535240FFAEB006EA92E /* SRHTTPConnectMessage.m in Sources */,
+				6D6E853B240FFAEB006EA92E /* SRSIMDHelpers.m in Sources */,
 				6D6E84BA240EAB88006EA92E /* NSObject+YYModel.m in Sources */,
-				6D6E84A3240EA856006EA92E /* Server.swift in Sources */,
-				6D6E84AF240EA856006EA92E /* NativeEngine.swift in Sources */,
+				6D6E852F240FFAEB006EA92E /* SRSecurityPolicy.m in Sources */,
 				6D6E8477240EA734006EA92E /* experiments.cpp in Sources */,
+				6D6E853A240FFAEB006EA92E /* SRRandom.m in Sources */,
 				6D6E844E240EA70C006EA92E /* UIView+Yoga.m in Sources */,
+				6D6E852D240FFAEB006EA92E /* NSRunLoop+SRWebSocket.m in Sources */,
+				6D6E85492410026E006EA92E /* FastUIDataModel.m in Sources */,
 				6D6E8418240EA521006EA92E /* ViewController.m in Sources */,
-				6D6E84AA240EA856006EA92E /* Framer.swift in Sources */,
+				6D6E853C240FFAEB006EA92E /* SRIOConsumer.m in Sources */,
 				6D6E847B240EA734006EA92E /* YGConfig.cpp in Sources */,
 				6D6E8472240EA734006EA92E /* log.cpp in Sources */,
+				6D6E854324100226006EA92E /* FastUIModel.m in Sources */,
 				6D6E8478240EA734006EA92E /* YGNodePrint.cpp in Sources */,
 				6D6E847A240EA734006EA92E /* YGValue.cpp in Sources */,
-				6D6E84A0240EA856006EA92E /* Security.swift in Sources */,
+				6D6E8538240FFAEB006EA92E /* SRHash.m in Sources */,
+				6D6E8537240FFAEB006EA92E /* SRLog.m in Sources */,
 				6D6E8476240EA734006EA92E /* YGStyle.cpp in Sources */,
-				6D6E849E240EA856006EA92E /* FoundationTransport.swift in Sources */,
-				6D6E84A5240EA856006EA92E /* FoundationHTTPHandler.swift in Sources */,
+				6D6E85462410025C006EA92E /* FastUIUIModel.m in Sources */,
+				6D6E8536240FFAEB006EA92E /* SRURLUtilities.m in Sources */,
+				6D6E853D240FFAEB006EA92E /* SRIOConsumerPool.m in Sources */,
+				6D6E8533240FFAEB006EA92E /* SRDelegateController.m in Sources */,
 				6D6E8473240EA734006EA92E /* Utils.cpp in Sources */,
-				6D6E84A1240EA856006EA92E /* FoundationSecurity.swift in Sources */,
 				6D6E8412240EA521006EA92E /* AppDelegate.m in Sources */,
 				6D6E8479240EA734006EA92E /* YGEnums.cpp in Sources */,
 				6D6E844F240EA70C006EA92E /* YGLayout.m in Sources */,
-				6D6E84A7240EA856006EA92E /* FrameCollector.swift in Sources */,
 				6D6E8474240EA734006EA92E /* YGLayout.cpp in Sources */,
+				6D6E853F240FFAEB006EA92E /* NSURLRequest+SRWebSocket.m in Sources */,
+				6D6E853E240FFAEB006EA92E /* SRConstants.m in Sources */,
 				6D6E847C240EA734006EA92E /* YGNode.cpp in Sources */,
-				6D6E84AB240EA856006EA92E /* Compression.swift in Sources */,
 				6D6E8423240EA522006EA92E /* main.m in Sources */,
-				6D6E849D240EA856006EA92E /* Transport.swift in Sources */,
-				6D6E84AC240EA856006EA92E /* WSCompression.swift in Sources */,
-				6D6E84AE240EA856006EA92E /* Engine.swift in Sources */,
+				6D6E8531240FFAEB006EA92E /* SRRunLoopThread.m in Sources */,
 				6D6E84BB240EAB88006EA92E /* YYClassInfo.m in Sources */,
-				6D6E84A4240EA856006EA92E /* WebSocketServer.swift in Sources */,
-				6D6E849F240EA856006EA92E /* TCPTransport.swift in Sources */,
-				6D6E84B0240EA856006EA92E /* WSEngine.swift in Sources */,
-				6D6E84BD240EABD7006EA92E /* Test.swift in Sources */,
 				6D6E8415240EA521006EA92E /* SceneDelegate.m in Sources */,
-				6D6E84A2240EA856006EA92E /* Data+Extensions.swift in Sources */,
+				6D6E8539240FFAEB006EA92E /* SRError.m in Sources */,
+				6D6E8530240FFAEB006EA92E /* SRProxyConnect.m in Sources */,
+				6D6E852C240FFAEB006EA92E /* SRWebSocket.m in Sources */,
 				6D6E847D240EA734006EA92E /* event.cpp in Sources */,
-				6D6E84A9240EA856006EA92E /* FoundationHTTPServerHandler.swift in Sources */,
-				6D6E84A8240EA856006EA92E /* StringHTTPHandler.swift in Sources */,
-				6D6E84A6240EA856006EA92E /* HTTPHandler.swift in Sources */,
+				6D6E8532240FFAEB006EA92E /* SRPinningSecurityPolicy.m in Sources */,
 				6D6E8475240EA734006EA92E /* Yoga.cpp in Sources */,
-				6D6E84AD240EA856006EA92E /* WebSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,7 +821,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = damien.FastUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FastUI/FastUI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -789,7 +841,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = damien.FastUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FastUI/FastUI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -798,7 +850,6 @@
 		6D6E8440240EA522006EA92E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FastUITests/Info.plist;
@@ -818,7 +869,6 @@
 		6D6E8441240EA522006EA92E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FastUITests/Info.plist;
@@ -838,7 +888,6 @@
 		6D6E8443240EA522006EA92E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FastUIUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -856,7 +905,6 @@
 		6D6E8444240EA522006EA92E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FastUIUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
