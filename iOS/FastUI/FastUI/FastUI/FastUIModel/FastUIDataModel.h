@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FastUIDataModel : NSObject
 
+
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,0 +1,6 @@
+framework module Pods_FastUI {
+  umbrella header "Pods-FastUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

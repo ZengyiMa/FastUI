@@ -54,6 +54,9 @@
 		6D6E854324100226006EA92E /* FastUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E854224100226006EA92E /* FastUIModel.m */; };
 		6D6E85462410025C006EA92E /* FastUIUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E85452410025C006EA92E /* FastUIUIModel.m */; };
 		6D6E85492410026E006EA92E /* FastUIDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E85482410026E006EA92E /* FastUIDataModel.m */; };
+		6D6E854D2413F095006EA92E /* UIView+FastUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E854C2413F095006EA92E /* UIView+FastUI.m */; };
+		6D6E858D24141043006EA92E /* FastUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E858C24141042006EA92E /* FastUIImageView.m */; };
+		FC8AF900E1859492D61DF9DC /* Pods_FastUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144A7C0D164F02ECF5CE1840 /* Pods_FastUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		144A7C0D164F02ECF5CE1840 /* Pods_FastUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA3B1E661328A2ABFEF80B8 /* Pods-FastUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastUI.release.xcconfig"; path = "Target Support Files/Pods-FastUI/Pods-FastUI.release.xcconfig"; sourceTree = "<group>"; };
 		6D6E840D240EA521006EA92E /* FastUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D6E8410240EA521006EA92E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D6E8411240EA521006EA92E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -180,6 +185,12 @@
 		6D6E85452410025C006EA92E /* FastUIUIModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastUIUIModel.m; sourceTree = "<group>"; };
 		6D6E85472410026E006EA92E /* FastUIDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastUIDataModel.h; sourceTree = "<group>"; };
 		6D6E85482410026E006EA92E /* FastUIDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastUIDataModel.m; sourceTree = "<group>"; };
+		6D6E854B2413F095006EA92E /* UIView+FastUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FastUI.h"; sourceTree = "<group>"; };
+		6D6E854C2413F095006EA92E /* UIView+FastUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FastUI.m"; sourceTree = "<group>"; };
+		6D6E858B24141042006EA92E /* FastUIImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastUIImageView.h; sourceTree = "<group>"; };
+		6D6E858C24141042006EA92E /* FastUIImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastUIImageView.m; sourceTree = "<group>"; };
+		6D6E859324149519006EA92E /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = framework/SDWebImage.framework; sourceTree = "<group>"; };
+		FB6C75A7FB2D175D8924E9E6 /* Pods-FastUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastUI.debug.xcconfig"; path = "Target Support Files/Pods-FastUI/Pods-FastUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8AF900E1859492D61DF9DC /* Pods_FastUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +226,8 @@
 				6D6E842B240EA522006EA92E /* FastUITests */,
 				6D6E8436240EA522006EA92E /* FastUIUITests */,
 				6D6E840E240EA521006EA92E /* Products */,
+				6D6E858E24149431006EA92E /* Frameworks */,
+				B4F19E29D1D61126C09F4BE0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -268,6 +282,7 @@
 		6D6E8445240EA6EC006EA92E /* FastUI */ = {
 			isa = PBXGroup;
 			children = (
+				6D6E854A2413F077006EA92E /* UI */,
 				6D6E8540241001AB006EA92E /* FastUIModel */,
 				6D6E84F9240FFAEB006EA92E /* SocketRocket */,
 				6D6E84B4240EAB88006EA92E /* YYModel */,
@@ -471,6 +486,36 @@
 			path = FastUIModel;
 			sourceTree = "<group>";
 		};
+		6D6E854A2413F077006EA92E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E854B2413F095006EA92E /* UIView+FastUI.h */,
+				6D6E854C2413F095006EA92E /* UIView+FastUI.m */,
+				6D6E858B24141042006EA92E /* FastUIImageView.h */,
+				6D6E858C24141042006EA92E /* FastUIImageView.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6D6E858E24149431006EA92E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E859324149519006EA92E /* SDWebImage.framework */,
+				144A7C0D164F02ECF5CE1840 /* Pods_FastUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4F19E29D1D61126C09F4BE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB6C75A7FB2D175D8924E9E6 /* Pods-FastUI.debug.xcconfig */,
+				5AA3B1E661328A2ABFEF80B8 /* Pods-FastUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -478,9 +523,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D6E843C240EA522006EA92E /* Build configuration list for PBXNativeTarget "FastUI" */;
 			buildPhases = (
+				67D6E09A79BB1C655982F0C6 /* [CP] Check Pods Manifest.lock */,
 				6D6E8409240EA521006EA92E /* Sources */,
 				6D6E840A240EA521006EA92E /* Frameworks */,
 				6D6E840B240EA521006EA92E /* Resources */,
+				6CA7E805070044C21172364F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -597,6 +644,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67D6E09A79BB1C655982F0C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FastUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CA7E805070044C21172364F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FastUI/Pods-FastUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FastUI/Pods-FastUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FastUI/Pods-FastUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D6E8409240EA521006EA92E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -612,6 +701,7 @@
 				6D6E844E240EA70C006EA92E /* UIView+Yoga.m in Sources */,
 				6D6E852D240FFAEB006EA92E /* NSRunLoop+SRWebSocket.m in Sources */,
 				6D6E85492410026E006EA92E /* FastUIDataModel.m in Sources */,
+				6D6E854D2413F095006EA92E /* UIView+FastUI.m in Sources */,
 				6D6E8418240EA521006EA92E /* ViewController.m in Sources */,
 				6D6E853C240FFAEB006EA92E /* SRIOConsumer.m in Sources */,
 				6D6E847B240EA734006EA92E /* YGConfig.cpp in Sources */,
@@ -631,6 +721,7 @@
 				6D6E8479240EA734006EA92E /* YGEnums.cpp in Sources */,
 				6D6E844F240EA70C006EA92E /* YGLayout.m in Sources */,
 				6D6E8474240EA734006EA92E /* YGLayout.cpp in Sources */,
+				6D6E858D24141043006EA92E /* FastUIImageView.m in Sources */,
 				6D6E853F240FFAEB006EA92E /* NSURLRequest+SRWebSocket.m in Sources */,
 				6D6E853E240FFAEB006EA92E /* SRConstants.m in Sources */,
 				6D6E847C240EA734006EA92E /* YGNode.cpp in Sources */,
@@ -810,14 +901,28 @@
 		};
 		6D6E843D240EA522006EA92E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB6C75A7FB2D175D8924E9E6 /* Pods-FastUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/framework/**",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/framework/**";
 				INFOPLIST_FILE = FastUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FastUI",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = damien.FastUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -830,14 +935,28 @@
 		};
 		6D6E843E240EA522006EA92E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AA3B1E661328A2ABFEF80B8 /* Pods-FastUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/framework/**",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/framework/**";
 				INFOPLIST_FILE = FastUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FastUI",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = damien.FastUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FastUIModel : NSObject
 @property (nonatomic, strong) FastUIUIModel *ui;
-@property (nonatomic, strong) FastUIDataModel *data;
+@property (nonatomic, strong) NSDictionary<NSString *, NSDictionary<NSString *, NSString *>*> *data;
 @end
 
 NS_ASSUME_NONNULL_END

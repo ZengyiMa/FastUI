@@ -10,7 +10,7 @@ wss.on("connection", function connection(ws) {
   try {
     chokidar.watch("examples").on("all", (event, path) => {
       var result = fastuiHandler(path);
-      console.log(JSON.stringify(result));
+      console.log(JSON.stringify(result))
       ws.send(JSON.stringify(result));
     });
   } catch (error) {
