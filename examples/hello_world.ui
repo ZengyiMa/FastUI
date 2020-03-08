@@ -1,8 +1,8 @@
 <template>
     <view style="flex:1; justify-content: center;align-items: center; background-color: #ffffff;">
-        <text style="text-align: center;">Hello world</text>
-        <image style="width: 100;height: 100;" source={{imageUrl}} />
-        <text @if={{awesome}}>Now, you can see me!</text>
+        <image style="width: 100;height: 100;" source="{{imageUrl}}" />
+        <text @if="{{awesome}}">Now, you can see me!</text>
+        <text @else>Now, eles!</text>
         <text>{{title}}</text>
     </view>
 </template>
@@ -15,7 +15,7 @@
         }, 
         "awesome" : {
             "type":"bool",
-            "value":false
+            "value":true
         },
         "title" : {
             "type":"string",

@@ -96,6 +96,9 @@ module.exports = function(file) {
     const templateResult = compiler.compile(componentResult.template.content, {
       whitespace: "condense"
     });
+
+    console.log(templateResult.ast)
+
     processJSONObject(templateResult.ast);
 
     // 数据处理

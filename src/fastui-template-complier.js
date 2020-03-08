@@ -2442,7 +2442,7 @@ function parse (
     }
     // tree management
     if (!stack.length && element !== root) {
-      // allow root elements with @if, v-else-if and v-else
+      // allow root elements with @if, @else-if and @else
       if (root.if && (element.elseif || element.else)) {
         if (process.env.NODE_ENV !== 'production') {
           checkRootConstraints(element);
@@ -2455,7 +2455,7 @@ function parse (
         warnOnce(
           "Component template should contain exactly one root element. " +
           "If you are using @if on multiple elements, " +
-          "use v-else-if to chain them instead.",
+          "use @else-if to chain them instead.",
           { start: element.start }
         );
       }
@@ -2466,7 +2466,7 @@ function parse (
       } else {
         if (element.slotScope) {
           // scoped slot
-          // keep it in the children list so that v-else(-if) conditions can
+          // keep it in the children list so that @else(-if) conditions can
           // find it as the prev node.
           var name = element.slotTarget || '"default"'
           ;(currentParent.scopedSlots || (currentParent.scopedSlots = {}))[name] = element;
@@ -2856,10 +2856,10 @@ function processIf (el) {
       block: el
     });
   } else {
-    if (getAndRemoveAttr(el, 'v-else') != null) {
+    if (getAndRemoveAttr(el, '@else') != null) {
       el.else = true;
     }
-    var elseif = getAndRemoveAttr(el, 'v-else-if');
+    var elseif = getAndRemoveAttr(el, '@else-if');
     if (elseif) {
       el.elseif = elseif;
     }
@@ -2877,7 +2877,7 @@ function processIfConditions (el, parent) {
     warn$1(
       "v-" + (el.elseif ? ('else-if="' + el.elseif + '"') : 'else') + " " +
       "used on element <" + (el.tag) + "> without corresponding @if.",
-      el.rawAttrsMap[el.elseif ? 'v-else-if' : 'v-else']
+      el.rawAttrsMap[el.elseif ? '@else-if' : '@else']
     );
   }
 }
@@ -2890,7 +2890,7 @@ function findPrevElement (children) {
     } else {
       if (process.env.NODE_ENV !== 'production' && children[i].text !== ' ') {
         warn$1(
-          "text \"" + (children[i].text.trim()) + "\" between @if and v-else(-if) " +
+          "text \"" + (children[i].text.trim()) + "\" between @if and @else(-if) " +
           "will be ignored.",
           children[i]
         );
@@ -3315,8 +3315,8 @@ function preTransformNode (el, options) {
     if (typeBinding) {
       var ifCondition = getAndRemoveAttr(el, '@if', true);
       var ifConditionExtra = ifCondition ? ("&&(" + ifCondition + ")") : "";
-      var hasElse = getAndRemoveAttr(el, 'v-else', true) != null;
-      var elseIfCondition = getAndRemoveAttr(el, 'v-else-if', true);
+      var hasElse = getAndRemoveAttr(el, '@else', true) != null;
+      var elseIfCondition = getAndRemoveAttr(el, '@else-if', true);
       // 1. checkbox
       var branch0 = cloneASTElement(el);
       // process for on the main node
@@ -3690,7 +3690,7 @@ function isStatic (node) {
   }
   return !!(node.pre || (
     !node.hasBindings && // no dynamic bindings
-    !node.if && !node.for && // not @if or v-for or v-else
+    !node.if && !node.for && // not @if or v-for or @else
     !isBuiltInTag(node.tag) && // not a built-in
     isPlatformReservedTag(node.tag) && // not a component
     !isDirectChildOfTemplateFor(node) &&
