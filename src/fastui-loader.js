@@ -5,14 +5,26 @@ function processJSONObject(jsonObject) {
   if (!jsonObject) {
     return;
   }
+  jsonObject.parent = undefined;
+  // 去除 if else 在属性中的映射
+  if (jsonObject.attrsMap["@if"]) {
+    jsonObject.attrsMap["@if"] = undefined;
+  }
+  if (jsonObject.attrsMap["@else"]) {
+    jsonObject.attrsMap["@else"] = undefined;
+  }
 
-  // 处理IF条件的循环问题
+  // 处理IF条件
   if (jsonObject.ifConditions) {
-    jsonObject.ifConditions = undefined;
-    if (jsonObject.attrsMap["@if"]) {
-      jsonObject.attrsMap["@if"] = undefined;
-    }
+    // 剥离if条件
     jsonObject.if = jsonObject.if.substring(2, jsonObject.if.length - 2);
+
+    // 判断是否有else
+    if (jsonObject.ifConditions[1]) {
+      jsonObject.elseElement = jsonObject.ifConditions[1].block;
+      processJSONObject(jsonObject.elseElement);
+    }
+    jsonObject.ifConditions = undefined;
   }
 
   if (jsonObject.children) {
@@ -51,10 +63,9 @@ function processJSONObject(jsonObject) {
     jsonObject.dynamicAttrs = {};
     const attrsRemoveKey = [];
     for (var key in jsonObject.attrsMap) {
-      
       const value = jsonObject.attrsMap[key];
       if (!value) {
-          continue;
+        continue;
       }
       if (value.startsWith("{{") && value.endsWith("}}")) {
         // 是变量，提取出来
@@ -80,7 +91,6 @@ function processJSONObject(jsonObject) {
     );
     jsonObject.innerText = undefined;
   }
-  jsonObject.parent = undefined;
 }
 
 module.exports = function(file) {
@@ -96,8 +106,6 @@ module.exports = function(file) {
     const templateResult = compiler.compile(componentResult.template.content, {
       whitespace: "condense"
     });
-
-    console.log(templateResult.ast)
 
     processJSONObject(templateResult.ast);
 

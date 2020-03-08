@@ -10,7 +10,7 @@
 
 @implementation FastUIUIModel
 + (NSDictionary *)modelCustomPropertyMapper {
-    return @{@"isStatic" : @"static", @"ifConditions": @"if"};
+    return @{@"isStatic" : @"static", @"ifExp": @"if"};
 }
 
 + (NSDictionary *)modelContainerPropertyGenericClass {
@@ -42,8 +42,8 @@
         self.innerText = data[self.dynamicInnerText][@"value"];
     }
     
-    if (self.ifConditions) {
-       self.ifValue = [data[self.ifConditions][@"value"] boolValue];
+    if (self.ifExp) {
+       self.ifValue = [data[self.ifExp][@"value"] boolValue];
     } else {
         self.ifValue = YES;
     }

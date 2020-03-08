@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FastUIUIModel : NSObject
+// 1：页面元素 
 @property (nonatomic, assign) NSUInteger type;
 @property (nonatomic, copy) NSString *tag;
 @property (nonatomic, copy) NSArray *attrsList;
@@ -26,8 +27,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSDictionary *staticStyle;
 @property (nonatomic, strong) NSDictionary *dynamicAttrs;
 @property (nonatomic, copy) NSString *dynamicInnerText;
-@property (nonatomic, copy) NSString *ifConditions;
+
+// if表达式
+@property (nonatomic, copy) NSString *ifExp;
+// if判断的值
 @property (nonatomic, assign) BOOL ifValue;
+
+// if为False的值
+@property (nonatomic, strong) FastUIUIModel *elseElement;
+
 
 - (void)applayData:(NSDictionary *)data;
 @end

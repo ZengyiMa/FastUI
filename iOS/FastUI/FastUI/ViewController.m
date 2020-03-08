@@ -67,7 +67,12 @@
    
     [model applayData:uimodel.data];
     if (!model.ifValue) {
-           return;
+        if (model.elseElement) {
+            model = model.elseElement;
+            [model applayData:uimodel.data];
+        } else {
+            return;
+        }
     }
     UIView *view;
     if ([model.tag isEqualToString:@"view"]) {
