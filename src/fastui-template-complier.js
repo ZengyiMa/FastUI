@@ -2517,11 +2517,11 @@ function parse (
         { start: el.start }
       );
     }
-    if (el.attrsMap.hasOwnProperty('v-for')) {
+    if (el.attrsMap.hasOwnProperty('@for')) {
       warnOnce(
-        'Cannot use v-for on stateful component root element because ' +
+        'Cannot use @for on stateful component root element because ' +
         'it renders multiple elements.',
-        el.rawAttrsMap['v-for']
+        el.rawAttrsMap['@for']
       );
     }
   }
@@ -2791,7 +2791,7 @@ function processKey (el) {
         var parent = el.parent;
         if (iterator && iterator === exp && parent && parent.tag === 'transition-group') {
           warn$1(
-            "Do not use v-for index as key on <transition-group> children, " +
+            "Do not use @for index as key on <transition-group> children, " +
             "this is the same as not using keys.",
             getRawBindingAttr(el, 'key'),
             true /* tip */
@@ -2813,14 +2813,14 @@ function processRef (el) {
 
 function processFor (el) {
   var exp;
-  if ((exp = getAndRemoveAttr(el, 'v-for'))) {
+  if ((exp = getAndRemoveAttr(el, '@for'))) {
     var res = parseFor(exp);
     if (res) {
       extend(el, res);
     } else if (process.env.NODE_ENV !== 'production') {
       warn$1(
-        ("Invalid v-for expression: " + exp),
-        el.rawAttrsMap['v-for']
+        ("Invalid @for expression: " + exp),
+        el.rawAttrsMap['@for']
       );
     }
   }
@@ -2934,10 +2934,10 @@ function processSlotContent (el) {
     el.slotScope = slotScope || getAndRemoveAttr(el, 'slot-scope');
   } else if ((slotScope = getAndRemoveAttr(el, 'slot-scope'))) {
     /* istanbul ignore if */
-    if (process.env.NODE_ENV !== 'production' && el.attrsMap['v-for']) {
+    if (process.env.NODE_ENV !== 'production' && el.attrsMap['@for']) {
       warn$1(
-        "Ambiguous combined usage of slot-scope and v-for on <" + (el.tag) + "> " +
-        "(v-for takes higher priority). Use a wrapper <template> for the " +
+        "Ambiguous combined usage of slot-scope and @for on <" + (el.tag) + "> " +
+        "(@for takes higher priority). Use a wrapper <template> for the " +
         "scoped slot to make it clearer.",
         el.rawAttrsMap['slot-scope'],
         true
@@ -3284,8 +3284,8 @@ function checkForAliasModel (el, value) {
     if (_el.for && _el.alias === value) {
       warn$1(
         "<" + (el.tag) + " v-model=\"" + value + "\">: " +
-        "You are binding v-model directly to a v-for iteration alias. " +
-        "This will not be able to modify the v-for source array because " +
+        "You are binding v-model directly to a @for iteration alias. " +
+        "This will not be able to modify the @for source array because " +
         "writing to the alias is like modifying a function local variable. " +
         "Consider using an array of objects and use v-model on an object property instead.",
         el.rawAttrsMap['v-model']
@@ -3331,7 +3331,7 @@ function preTransformNode (el, options) {
       });
       // 2. add radio else-if condition
       var branch1 = cloneASTElement(el);
-      getAndRemoveAttr(branch1, 'v-for', true);
+      getAndRemoveAttr(branch1, '@for', true);
       addRawAttr(branch1, 'type', 'radio');
       processElement(branch1, options);
       addIfCondition(branch0, {
@@ -3340,7 +3340,7 @@ function preTransformNode (el, options) {
       });
       // 3. other
       var branch2 = cloneASTElement(el);
-      getAndRemoveAttr(branch2, 'v-for', true);
+      getAndRemoveAttr(branch2, '@for', true);
       addRawAttr(branch2, ':type', typeBinding);
       processElement(branch2, options);
       addIfCondition(branch0, {
@@ -3690,7 +3690,7 @@ function isStatic (node) {
   }
   return !!(node.pre || (
     !node.hasBindings && // no dynamic bindings
-    !node.if && !node.for && // not @if or v-for or @else
+    !node.if && !node.for && // not @if or @for or @else
     !isBuiltInTag(node.tag) && // not a built-in
     isPlatformReservedTag(node.tag) && // not a component
     !isDirectChildOfTemplateFor(node) &&
@@ -4003,7 +4003,7 @@ function genOnce (el, state) {
     }
     if (!key) {
       process.env.NODE_ENV !== 'production' && state.warn(
-        "v-once can only be used inside v-for that is keyed. ",
+        "v-once can only be used inside @for that is keyed. ",
         el.rawAttrsMap['v-once']
       );
       return genElement(el, state)
@@ -4069,10 +4069,10 @@ function genFor (
     !el.key
   ) {
     state.warn(
-      "<" + (el.tag) + " v-for=\"" + alias + " in " + exp + "\">: component lists rendered with " +
-      "v-for should have explicit keys. " +
+      "<" + (el.tag) + " @for=\"" + alias + " in " + exp + "\">: component lists rendered with " +
+      "@for should have explicit keys. " +
       "See https://vuejs.org/guide/list.html#key for more info.",
-      el.rawAttrsMap['v-for'],
+      el.rawAttrsMap['@for'],
       true /* tip */
     );
   }
@@ -4217,7 +4217,7 @@ function genScopedSlots (
   // by default scoped slots are considered "stable", this allows child
   // components with only scoped slots to skip forced updates from parent.
   // but in some cases we have to bail-out of this optimization
-  // for example if the slot contains dynamic names, has @if or v-for on them...
+  // for example if the slot contains dynamic names, has @if or @for on them...
   var needsForceUpdate = el.for || Object.keys(slots).some(function (key) {
     var slot = slots[key];
     return (
@@ -4234,7 +4234,7 @@ function genScopedSlots (
   // the generated code of all the slot contents.
   var needsKey = !!el.if;
 
-  // OR when it is inside another scoped slot or v-for (the reactivity may be
+  // OR when it is inside another scoped slot or @for (the reactivity may be
   // disconnected due to the intermediate scope variable)
   // #9438, #9506
   // TODO: this can be further optimized by properly analyzing in-scope bindings
@@ -4317,7 +4317,7 @@ function genChildren (
   var children = el.children;
   if (children.length) {
     var el$1 = children[0];
-    // optimize single v-for
+    // optimize single @for
     if (children.length === 1 &&
       el$1.for &&
       el$1.tag !== 'template' &&
@@ -4483,8 +4483,8 @@ function checkNode (node, warn) {
         var value = node.attrsMap[name];
         if (value) {
           var range = node.rawAttrsMap[name];
-          if (name === 'v-for') {
-            checkFor(node, ("v-for=\"" + value + "\""), warn, range);
+          if (name === '@for') {
+            checkFor(node, ("@for=\"" + value + "\""), warn, range);
           } else if (name === 'v-slot' || name[0] === '#') {
             checkFunctionParameterExpression(value, (name + "=\"" + value + "\""), warn, range);
           } else if (onRE.test(name)) {
@@ -4520,9 +4520,9 @@ function checkEvent (exp, text, warn, range) {
 
 function checkFor (node, text, warn, range) {
   checkExpression(node.for || '', text, warn, range);
-  checkIdentifier(node.alias, 'v-for alias', text, warn, range);
-  checkIdentifier(node.iterator1, 'v-for iterator', text, warn, range);
-  checkIdentifier(node.iterator2, 'v-for iterator', text, warn, range);
+  checkIdentifier(node.alias, '@for alias', text, warn, range);
+  checkIdentifier(node.iterator1, '@for iterator', text, warn, range);
+  checkIdentifier(node.iterator2, '@for iterator', text, warn, range);
 }
 
 function checkIdentifier (
@@ -5222,7 +5222,7 @@ function elementToString (el, state) {
 }
 
 function elementToSegments (el, state) {
-  // v-for / @if
+  // @for / @if
   if (el.for && !el.forProcessed) {
     el.forProcessed = true;
     return [{

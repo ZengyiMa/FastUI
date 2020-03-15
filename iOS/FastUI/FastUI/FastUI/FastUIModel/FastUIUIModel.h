@@ -37,6 +37,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) FastUIUIModel *elseElement;
 
 
+// for表达式
+@property (nonatomic, assign) BOOL isFor;
+@property (nonatomic, copy) NSString *forValue;
+@property (nonatomic, copy) NSDictionary *forItemValue;
+
+
 - (void)applayData:(NSDictionary *)data;
 @end
 

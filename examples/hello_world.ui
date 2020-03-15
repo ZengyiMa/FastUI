@@ -4,6 +4,12 @@
         <text>{{title}}</text>
         <text @if="{{show}}">{{ifTitle}}</text>
         <text @else>{{elseTitle}}</text>
+        <view @for="{{items}}">
+            <view>
+                <text>{{item.name}}</text>
+                <text>{{item.age}}</text>
+            </view>
+        </view>
     </view>
 </template>
 
@@ -28,6 +34,10 @@
         "ifTitle" : {
             "type":"string",
             "value":"you see if title"
+        },
+        "items": {
+            "type":"array",
+            "value": [{"name": "name1", "age": "1"}, {"name":"name2",  "age": "2"}]
         }
     }
 

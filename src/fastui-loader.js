@@ -14,6 +14,31 @@ function processJSONObject(jsonObject) {
     jsonObject.attrsMap["@else"] = undefined;
   }
 
+  // 变量提取处理
+  if (jsonObject.attrsMap) {
+    jsonObject.dynamicAttrs = {};
+    const attrsRemoveKey = [];
+    for (var key in jsonObject.attrsMap) {
+      const value = jsonObject.attrsMap[key];
+      if (!value) {
+        continue;
+      }
+      if (value.startsWith("{{") && value.endsWith("}}")) {
+        // 是变量，提取出来
+        jsonObject.dynamicAttrs[key] = value.substring(2, value.length - 2);
+        attrsRemoveKey.push(key);
+      }
+    }
+    attrsRemoveKey.forEach(element => {
+      jsonObject.attrsMap[element] = undefined;
+    });
+  }
+
+  // 处理FOR
+  if (jsonObject.dynamicAttrs["@for"]) {
+    // 是for
+  }
+
   // 处理IF条件
   if (jsonObject.ifConditions) {
     // 剥离if条件
@@ -58,26 +83,6 @@ function processJSONObject(jsonObject) {
     jsonObject.staticStyle = JSON.parse(jsonObject.staticStyle);
   }
 
-  // 变量提取处理
-  if (jsonObject.attrsMap) {
-    jsonObject.dynamicAttrs = {};
-    const attrsRemoveKey = [];
-    for (var key in jsonObject.attrsMap) {
-      const value = jsonObject.attrsMap[key];
-      if (!value) {
-        continue;
-      }
-      if (value.startsWith("{{") && value.endsWith("}}")) {
-        // 是变量，提取出来
-        jsonObject.dynamicAttrs[key] = value.substring(2, value.length - 2);
-        attrsRemoveKey.push(key);
-      }
-    }
-    attrsRemoveKey.forEach(element => {
-      jsonObject.attrsMap[element] = undefined;
-    });
-  }
-
   // 内联文本的变量提取
   if (
     jsonObject.innerText &&
@@ -93,6 +98,23 @@ function processJSONObject(jsonObject) {
   }
 }
 
+// 处理一下For模板
+function processFor(jsonObject, isFor, forValue) {
+  if (jsonObject.dynamicAttrs["@for"]) {
+    isFor = true;
+    forValue = jsonObject.dynamicAttrs["@for"];
+  }
+
+  jsonObject.isFor = isFor;
+  jsonObject.forValue = forValue;
+
+  if (jsonObject.children) {
+    jsonObject.children.forEach(element => {
+      processFor(element, isFor, forValue);
+    });
+  }
+}
+
 module.exports = function(file) {
   try {
     if (!file) {
@@ -100,14 +122,13 @@ module.exports = function(file) {
     }
     const fileData = fs.readFileSync(file).toString();
     var componentResult = compiler.parseComponent(fileData);
-    console.log(componentResult);
-
     // 模板处理
     const templateResult = compiler.compile(componentResult.template.content, {
       whitespace: "condense"
     });
 
     processJSONObject(templateResult.ast);
+    processFor(templateResult.ast);
 
     // 数据处理
     var dataResult = null;
